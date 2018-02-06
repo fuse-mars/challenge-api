@@ -1,0 +1,25 @@
+{
+  "name": "taskCategory",
+  "plural": "taskCategories",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tasks": {
+      "type": "hasMany",
+      "model": "task",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
